@@ -6,5 +6,5 @@
     register: user
     
   - name: print variable value 
-    ansible.builtin.debug
+    ansible.builtin.debug:
       msg: "user output is: {{user}}"
