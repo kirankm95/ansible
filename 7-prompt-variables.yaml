@@ -1,0 +1,10 @@
+- name: variables from prompt
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    course: DAWS
+    duration: just today 
+  tasks:
+  - name: check variables
+    ansible.builtin.debug:
+      msg: "Hello {{name}}, I am learning {{course}} from today till {{duration}}" 
