@@ -1,0 +1,15 @@
+#playbook is a list of plays
+#playbook can contain multiple of task's
+- name: play-1
+  hosts: localhost
+  tasks:
+  - name: play-1 and task-1
+    ansible.builtin.debug:
+      msg: "Orey idhi play-1 and task-1 nundi vachindi"
+
+- name: play-2
+  hosts: localhost
+  tasks:
+  - name: play-2 and task-2
+    ansible.builtin.debug:
+      msg: "Idhi play-2 and task-2 nundi vachina msg ra babus"
