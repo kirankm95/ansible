@@ -1,5 +1,5 @@
 - name: variables using in ansible playbook
-  hosts: local host
+  hosts: localhost
   tasks:
   - name: check variables
     ansible.builtin.debug:
