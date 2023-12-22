@@ -3,9 +3,11 @@
   vars_prompt:
   - name: USERNAME
     prompt: Please enter me namakaranam
-    course: DAWS
-    prompt: Me course ento enter cheyandi ra
+    private: false
+    name: PASSWORD
+    prompt: password thagalapettandi ikkada
+    private: true
   tasks:
-  - name: check variables
+  - name: print prompt variables
     ansible.builtin.debug:
-      msg: "Hello {{USERNAME}}, I am learning {{DAWS}} "
+      msg: "Hello name {{USERNAME}}, and password id {{PASSWORD}} "
