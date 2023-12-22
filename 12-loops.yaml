@@ -1,0 +1,14 @@
+- name: loops ansible playbook
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install multiple packages
+    ansible.builtin.package:
+      name: "{{item}}"
+      state: present
+    loop:
+    - nginx
+    - nfs
+    - git
+    - mysql
+    - vallu andharu
