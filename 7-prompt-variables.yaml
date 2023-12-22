@@ -5,8 +5,7 @@
     prompt: Please enter me namakaranam
     course: DAWS
     prompt: Me course ento enter cheyandi ra
-    duration: just today 
   tasks:
   - name: check variables
     ansible.builtin.debug:
-      msg: "Hello {{USERNAME}}, I am learning {{DAWS}} from today till {{duration}}" 
+      msg: "Hello {{USERNAME}}, I am learning {{DAWS}} "
