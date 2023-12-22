@@ -1,0 +1,12 @@
+- name: loops ansible playbook
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: print persons
+    ansible.builtin.debug:
+      msg: "Hello entra {{item}}" 
+    loop:
+    - Ramesh
+    - valla annayya
+    - valla thammudu
+    - vallu andharu
