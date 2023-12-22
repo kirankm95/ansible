@@ -5,7 +5,7 @@
     prompt: Please enter me namakaranam
     private: false
     name: PASSWORD
-    prompt: password thagalapettandi ikkada
+  - prompt: password thagalapettandi ikkada
     private: true
   tasks:
   - name: print prompt variables
