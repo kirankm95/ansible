@@ -1,6 +1,10 @@
 - name: variables using in ansible playbook
   hosts: localhost
+  vars:
+    name: "KIraN"
+    course: "anni courses'S"
+    duration: "100 days"
   tasks:
   - name: check variables
     ansible.builtin.debug:
-      msg: "Hello Rajaa, I am learning every course from today till 100 dayss"
+      msg: "Hello {{name}}, I am learning {{course}} from today till {{duration}}"
