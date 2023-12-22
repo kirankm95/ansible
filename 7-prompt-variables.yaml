@@ -2,7 +2,9 @@
   hosts: localhost
   vars_prompt:
   - name: USERNAME
+    prompt: Please enter me namakaranam
     course: DAWS
+    prompt: Me course ento enter cheyandi ra
     duration: just today 
   tasks:
   - name: check variables
