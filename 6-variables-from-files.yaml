@@ -1,7 +1,7 @@
 - name: variables using in ansible playbook
   hosts: localhost
   vars_files: 
-  variables.yaml
+    variables.yaml
   tasks:
   - name: check variables
     vars:
