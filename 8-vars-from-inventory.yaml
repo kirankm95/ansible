@@ -1,0 +1,6 @@
+- name: variables using in ansible playbook
+  hosts: localhost
+  tasks:
+  - name: check variables
+    ansible.builtin.debug:
+      msg: "Hello {{name}}, I am learning {{course}} from today till {{duration}}"
