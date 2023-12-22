@@ -8,7 +8,7 @@
       state: "{{item.state}}"
       ignore_erros: true
     loop:
-    - {name: git, state: present}
-    - {name: mysql, state: absent}
-    - {name: nginx, state: absent}
-    - {name: java, state: absent}
+    - {name: 'git', state: 'present'}
+    - {name: 'mysql', state: 'absent'}
+    - {name: 'nginx', state: 'absent'}
+    - {name: 'java', state: 'absent's}
