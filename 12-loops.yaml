@@ -1,12 +1,12 @@
 - name: loops ansible playbook
   hosts: localhost
   become: yes
-  ignore_erros: true
   tasks:
   - name: install multiple packages
     ansible.builtin.package:
       name: "{{item}}"
       state: present
+      ignore_erros: true
     loop:
     - nginx
     - nfs
